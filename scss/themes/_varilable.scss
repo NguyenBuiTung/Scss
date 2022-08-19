@@ -1,0 +1,40 @@
+$text-c1: #b61984;
+$text-c1-dark: #000;
+$text-c1-light: #fff;
+$text-ligt: 300;
+$text-regular: 400;
+$text-semibold: 600;
+$text-bold: 700;
+$text-xs: 14px;
+$text-base: 16px;
+$text-xl: 18px;
+$text-2xl: 20px;
+$text-3xl: 30px;
+$text-4xl: 40px;
+$text-5xl: 50px;
+$text-6xl: 60px;
+//backgroud
+$bg-c1-primary: #2a73dd;
+$bg-c1-light: #fff;
+$bg-transparent: rgba(0, 0, 0, 0);
+@mixin text($fs: $text-xs, $fw: $text-semibold, $c: $text-c1-dark) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $c;
+}
+@mixin button($fs, $fw, $c, $bg, $pd, $bd, $br, $bg-hover, $c-hover,$d-hover,$e-hover) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $c;
+    background: $bg;
+    padding: $pd;
+    border: $bd;
+    border-radius: $br;
+    cursor: pointer;
+    &:hover {
+        background: $bg-hover;
+        color: $c-hover;
+        transition-duration: $d-hover;
+        box-shadow: $e-hover;
+    }
+}
